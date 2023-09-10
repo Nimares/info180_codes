@@ -14,6 +14,7 @@ from zero_h import ZeroH
 from heuristic import Heuristic
 from personal_heuristic import PersonalH
 from euclidian_distance_heuristic import EucledianH
+from personal_heuristic_3x import PersonalH3x
 import math 
 
 
@@ -161,17 +162,17 @@ class GridWalkSpace:
 
 if __name__ == '__main__':
 
-    # print("Breadth-first")
-    # sp = GridWalkSpace(Queue())
-    # sp.solve()
+    print("Breadth-first")
+    sp = GridWalkSpace(Queue())
+    sp.solve()
 
-    # print("Depth-first")
-    # sp = GridWalkSpace(LifoQueue())
-    # sp.solve()
+    print("Depth-first")
+    sp = GridWalkSpace(LifoQueue())
+    sp.solve()
 
-    # print("Lowest-cost-first")
-    # sp = GridWalkSpace(PriorityQueue())
-    # sp.solve()
+    print("Lowest-cost-first")
+    sp = GridWalkSpace(PriorityQueue())
+    sp.solve()
 
     print("Heuristic Search")
     sp = GridWalkSpace(PriorityQueue(), PersonalH())
@@ -179,6 +180,10 @@ if __name__ == '__main__':
 
     print("Eucludian Heuristic Search")
     sp = GridWalkSpace(PriorityQueue(), EucledianH())
+    sp.solve()
+
+    print("Heuristic Search 3x")
+    sp = GridWalkSpace(PriorityQueue(), PersonalH3x())
     sp.solve()
 
 

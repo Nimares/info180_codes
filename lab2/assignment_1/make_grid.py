@@ -7,7 +7,7 @@ import random
 
 SIZE = 100
 
-def make_random_grid(size = 100,prob = 0.35, seed = 5001):
+def make_random_grid(size = 400,prob = 0.42, seed = 521):
     '''
     Makes the random grid and the costs for each place in a square grid
     :param size: the size of the grid side
