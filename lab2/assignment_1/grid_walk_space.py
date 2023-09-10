@@ -13,6 +13,8 @@ from make_grid import is_goal
 from zero_h import ZeroH
 from heuristic import Heuristic
 from personal_heuristic import PersonalH
+from euclidian_distance_heuristic import EucledianH
+import math 
 
 
 
@@ -171,8 +173,12 @@ if __name__ == '__main__':
     # sp = GridWalkSpace(PriorityQueue())
     # sp.solve()
 
-    print("Lowest-cost-first")
+    print("Heuristic Search")
     sp = GridWalkSpace(PriorityQueue(), PersonalH())
+    sp.solve()
+
+    print("Eucludian Heuristic Search")
+    sp = GridWalkSpace(PriorityQueue(), EucledianH())
     sp.solve()
 
 
