@@ -13,4 +13,8 @@ class EucledianH(Heuristic):
         x_distance = x2 - x1
         y_distance = y2 - y1
         euclidian_distance = math.sqrt((x_distance)**2+(y_distance))
+
+        euclidian_distance = math.sqrt((SIZE-node.i)*2+(SIZE-node.j)**2)
         return euclidian_distance
+    
+        

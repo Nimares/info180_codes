@@ -186,5 +186,7 @@ if __name__ == '__main__':
     sp = GridWalkSpace(PriorityQueue(), PersonalH3x())
     sp.solve()
 
+#Assignment 6: Even when varying size, probability seed. Using the PersonalH3x heuristic yielded the best results 
+
 
 
