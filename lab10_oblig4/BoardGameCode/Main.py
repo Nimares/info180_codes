@@ -3,7 +3,7 @@
  Programmed by Bjørnar Tessem, Sept-Oct 2022
 '''
 
-from PlayBoardGame import PlayBoardGame
+from StudentPlayBoardGame import PlayBoardGame
 
 # create a game playing object
 game = PlayBoardGame()

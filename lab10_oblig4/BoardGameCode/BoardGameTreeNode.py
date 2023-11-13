@@ -12,7 +12,7 @@ class BoardGameTreeNode:
     '''
 
     # Max depth of search for the computer players
-    MAX_DEPTH = 5
+    MAX_DEPTH = 7
 
 
     def __init__(self, a_board):

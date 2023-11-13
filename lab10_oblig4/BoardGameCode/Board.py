@@ -14,7 +14,7 @@ NOT_TERMINAL = 'N'
 DRAW = '='
 
 # Number for the size of the square board
-GAMESIZE = 6
+GAMESIZE = 7
 
 # Writes a code for a square on the board in the form capital letter (column) and number (row)
 # The board index is given as a pair (row, column)
